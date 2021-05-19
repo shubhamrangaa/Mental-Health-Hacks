@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sentiment Analyses</title>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Sentiment Analysis</title>
   </head>
   <body>
     <form method="POST">
-      <label for="mood">Tell us your mood:</label>
-      <textarea id="mood" name="text1" rows="5" cols="40"></textarea>
+      <!-- <label for="mood">Tell us your mood:</label> -->
+      <textarea id="mood" name="text1" rows="5" cols="40" placeholder="Tell us your mood"></textarea>
       <button>Submit!</button>
     </form>
     {% if final %}
