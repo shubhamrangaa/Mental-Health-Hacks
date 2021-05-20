@@ -4,13 +4,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css" />
     <title>Sentiment Analysis</title>
   </head>
   <body>
     <form method="POST">
       <!-- <label for="mood">Tell us your mood:</label> -->
-      <textarea id="mood" name="text1" rows="5" cols="40" placeholder="Tell us your mood"></textarea>
+      <textarea
+        id="mood"
+        name="text1"
+        rows="5"
+        cols="40"
+        placeholder="Tell us your mood"
+      ></textarea>
       <button>Submit!</button>
     </form>
     {% if final %}
@@ -23,38 +29,62 @@
       {% endif %}
     </div>
 
-<!-- The actual shit starts here|||| -->
+    <!-- The actual shit starts here|||| -->
     <div class="box-baby">
-<!-- Nav bar starts here - Shuchit -->
-    <div class="nav-container">
-      <div class="nav-Calender"> <a href="http://" target="_blank" rel="noopener noreferrer">Calender</a></div>
-      <div class="nav-Calender"><a href="http://" target="_blank" rel="noopener noreferrer">Overview</a></div>
-      <div class="nav-Calender"><a href="http://" target="_blank" rel="noopener noreferrer">History</a></div>
-      <div class="nav-Calender"><a href="http://" target="_blank" rel="noopener noreferrer">Profile</a></div>
-
-    </div>
-<!-- Getting some form action here  -->
-    <form action="">
-      <p class="ques">How do you feel today?</p>
-      <div class="emoji">
-        <!-- Idhar maine gadar bakchodi machai hai isko badalna hoga, mainly input kya rakhna hoga pehele maine hidden rakkha tha (Dikhne me best wohi hai) -->
-        <input type="radio" name="happy"><label for="happy"><p class="emoji_child">😃</p></label>
-        <input type="radio" name="sad"><label for="sad"><p class="emoji_child">😭</p></label>
-        <input type="radio" name="angry"><label for="angry"><p class="emoji_child">😡</p></label>
-        <input type="radio" name="neutral"><label for="neutral"><p class="emoji_child">😐</p></label>
+      <!-- Nav bar starts here - Shuchit -->
+      <div class="nav-container">
+        <div class="nav-Calender">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Calender</a
+          >
+        </div>
+        <div class="nav-Calender">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Overview</a
+          >
+        </div>
+        <div class="nav-Calender">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >History</a
+          >
+        </div>
+        <div class="nav-Calender">
+          <a href="http://" target="_blank" rel="noopener noreferrer"
+            >Profile</a
+          >
+        </div>
       </div>
-      <p>What made you feel this way?</p>
-      <textarea name="Note_on_emotion" id="" class="emo-note"  placeholder="write a short note"></textarea>
-      <div class="submit-container">
-      <button type="submit" class="submit_button">Skip & Submit</button>
-      <button type="submit" class="submit_button">Submit</button>
+      <!-- Getting some form action here  -->
+      <form action="">
+        <p class="ques">How do you feel today?</p>
+        <div class="emoji">
+          <!-- Idhar maine gadar bakchodi machai hai isko badalna hoga, mainly input kya rakhna hoga pehele maine hidden rakkha tha (Dikhne me best wohi hai) -->
+
+          <label for="happy"><p class="emoji_child">😃</p></label>
+          <input type="radio" name="moodEmoji" id="happy" />
+
+          <label for="sad"><p class="emoji_child">😭</p></label>
+          <input type="radio" name="moodEmoji" id="sad" />
+
+          <label for="angry"><p class="emoji_child">😡</p></label>
+          <input type="radio" name="moodEmoji" id="angry" />
+
+          <label for="neutral"><p class="emoji_child">😐</p></label>
+          <input type="radio" name="moodEmoji" id="neutral" />
+        </div>
+        <p>What made you feel this way?</p>
+        <textarea
+          name="Note_on_emotion"
+          id=""
+          class="emo-note"
+          placeholder="write a short note"
+        ></textarea>
+        <div class="submit-container">
+          <button type="submit" class="submit_button">Skip & Submit</button>
+          <button type="submit" class="submit_button">Submit</button>
+        </div>
+      </form>
     </div>
-    </form>
-
-
-  </div>
-  
-
-</body>
+  </body>
 </html>
 <!-- mmmmhmmm bakchodi chal rahi hai -->
