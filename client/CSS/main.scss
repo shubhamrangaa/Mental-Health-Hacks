@@ -1,0 +1,79 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-color: beige;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  width: 400px;
+}
+.box-baby {
+  width: 30vw;
+}
+.nav-container {
+  width: 30vw;
+  padding: 3vh 0vh 3vh 0vh;
+  background-color: rgb(135, 237, 250);
+  /* color: rgb(32, 158, 158); */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+a {
+  padding: 1vh 1vw;
+  border-radius: 20px;
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  background-color: rgb(0, 173, 173);
+  color: aqua;
+}
+/* 
+form{
+
+} */
+p {
+  padding-top: 5vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.emoji {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.emoji_child {
+  font-size: 3em;
+  /* background-color: yellow; */
+}
+
+textarea {
+  padding: 2em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vh;
+  width: 70%;
+  height: 5vw;
+  border-radius: 20px;
+}
+textarea::placeholder {
+  font-size: x-large;
+}
+.submit-container {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-bottom: 6vh;
+}
+.submit_button {
+  padding: 1.5vh;
+  border-radius: 10px;
+  border-color: blueviolet;
+}
