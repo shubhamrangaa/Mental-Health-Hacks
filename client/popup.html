@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css" />
+    <title>Mental Health Hacks</title>
+  </head>
+  <body>
+    <!-- <form method="POST">
+      <label for="mood">Tell us your mood:</label>
+      <textarea
+        id="mood"
+        name="text1"
+        rows="5"
+        cols="40"
+        placeholder="Tell us your mood"
+      ></textarea>
+      <button>Submit!</button>
+    </form>
+    {% if final %}
+    <div>
+      <h2>The Sentiment of</h2>
+      '{{ text1 }}'
+      <h2>is {{ final *100}}% positive !</h2>
+      {% else %}
+      <p></p>
+      {% endif %}
+    </div> -->
+
+    <!-- The actual shit starts here|||| -->
+    <div class="box-baby">
+      <!-- Nav bar starts here - Shuchit -->
+      <div class="nav-container">
+        <div class="nav-Calender">
+          <a href="./Calender.html"  rel="noopener noreferrer"
+            >Calender</a
+          >
+        </div>
+        <div class="nav-Calender">
+          <a href="./Overview.html"  rel="noopener noreferrer"
+            >Overview</a
+          >
+        </div>
+        <div class="nav-Calender">
+          <a href="./History.html" rel="noopener noreferrer"
+            >History</a
+          >
+        </div>
+        <div class="nav-Calender">
+          <a href="./Profile.html"  rel="noopener noreferrer"
+            >Profile</a
+          >
+        </div>
+      </div>
+      <!-- Getting some form action here  -->
+      <form id="moodForm">
+        <p class="ques">How do you feel today?</p>
+        <div class="emoji">
+          <!-- Idhar maine gadar bakchodi machai hai isko badalna hoga, mainly input kya rakhna hoga pehele maine hidden rakkha tha (Dikhne me best wohi hai) -->
+
+          <label for="happy"><p class="emoji_child">😃</p></label>
+          <input type="radio" name="moodEmoji" id="happy" />
+
+          <label for="sad"><p class="emoji_child">😭</p></label>
+          <input type="radio" name="moodEmoji" id="sad" />
+
+          <label for="angry"><p class="emoji_child">😡</p></label>
+          <input type="radio" name="moodEmoji" id="angry" />
+
+          <label for="neutral"><p class="emoji_child">😐</p></label>
+          <input type="radio" name="moodEmoji" id="neutral" />
+        </div>
+        <p>What made you feel this way?</p>
+        <textarea
+          name="emotionNote"
+          id="emotionNote"
+          class="emo-note"
+          placeholder="Describe your emotion"
+        ></textarea>
+        <div class="submit-container">
+          <!-- <button type="submit" class="submit_button">Skip & Submit</button> -->
+          <button type="submit" class="submit_button">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-database.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
+<!-- mmmmhmmm bakchodi chal rahi hai -->
