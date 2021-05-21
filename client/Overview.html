@@ -5,6 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css" />
     <title>Overview - Mental Health Hacks</title>
+
+    <script>
+      window.onload = function () {
+      
+      var chart = new CanvasJS.Chart("chartContainer", {
+        exportEnabled: true,
+        animationEnabled: true,
+        
+        legend:{
+          cursor: "pointer",
+          itemclick: explodePie
+        },
+        data: [{
+          type: "pie",
+          showInLegend: true,
+          toolTipContent: "{name}: <strong>{y}%</strong>",
+          indexLabel: "{name} - {y}%",
+          dataPoints: [
+            { y: 26, name: "Happy", exploded: true },
+            { y: 20, name: "Sad" },
+            { y: 5, name: "Angry" },
+            { y: 3, name: "Neutral" }
+          ]
+        }]
+      });
+      chart.render();
+      }
+      
+      function explodePie (e) {
+        if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
+          e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
+        } else {
+          e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
+        }
+        e.chart.render();
+      
+      }
+      </script>
     
 </head>
 <body>
@@ -33,6 +71,10 @@
             </div>
           </div>
           <p> Overview</p>
+
+          <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+
     </div>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 </body>
 </html>
