@@ -3,47 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css" />
-    <title>Overview - Mental Health Hacks</title>
-
-    <script>
-      window.onload = function () {
-      
-      var chart = new CanvasJS.Chart("chartContainer", {
-        exportEnabled: true,
-        animationEnabled: true,
-        
-        legend:{
-          cursor: "pointer",
-          itemclick: explodePie
-        },
-        data: [{
-          type: "pie",
-          showInLegend: true,
-          toolTipContent: "{name}: <strong>{y}%</strong>",
-          indexLabel: "{name} - {y}%",
-          dataPoints: [
-            { y: 26, name: "Happy", exploded: true },
-            { y: 20, name: "Sad" },
-            { y: 5, name: "Angry" },
-            { y: 3, name: "Neutral" }
-          ]
-        }]
-      });
-      chart.render();
-      }
-      
-      function explodePie (e) {
-        if(typeof (e.dataSeries.dataPoints[e.dataPointIndex].exploded) === "undefined" || !e.dataSeries.dataPoints[e.dataPointIndex].exploded) {
-          e.dataSeries.dataPoints[e.dataPointIndex].exploded = true;
-        } else {
-          e.dataSeries.dataPoints[e.dataPointIndex].exploded = false;
-        }
-        e.chart.render();
-      
-      }
-      </script>
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/pie.css" />
     
+    
+    <title>Overview - Mental Health Hacks</title>
 </head>
 <body>
     <div class="box-baby">
@@ -72,9 +36,12 @@
           </div>
           <p> Overview</p>
 
-          <div id="chartContainer" style="height: 370px; width: 100%;"></div>
+          <div class="pie" data-pie="#ffd233 2,	#00FF80 3, #6840fc 3, 
+          #d45100 3"></div>
+
+          
 
     </div>
-    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="./pie.js"></script>
 </body>
 </html>

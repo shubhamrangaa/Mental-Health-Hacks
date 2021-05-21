@@ -1,0 +1,26 @@
+.pie svg {
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // bottom: 0;
+    // left: 0;
+    // margin: auto;
+    width: 65%;
+    padding-top: 5vh;
+    padding-left: 17.5%;
+    padding-right: 17.5%;
+}
+.graph {
+    visibility: hidden;
+}
+.graph > * {
+    visibility: visible;
+    transition: all 200ms ease-in-out;
+}
+.graph:hover > * {
+    opacity: 0.5;
+}
+.graph__percent:hover {
+    stroke: #f907d9;
+    opacity: 1;
+}
