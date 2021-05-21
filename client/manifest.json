@@ -6,7 +6,11 @@
   "version": "1.0.0",
   "browser_action": {
     "default_icon": "Icon.png",
+<<<<<<< HEAD
     "default_popup": "index.html"
+=======
+    "default_popup": "popup.html"
+>>>>>>> 457ebd47fa85f648112f549edc6d8b9c02eec0d1
   },
   "permissions": ["activeTab"]
 }
