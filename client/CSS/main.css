@@ -6,15 +6,9 @@
 body {
   background-color: beige;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 400px;
-}
-
-.box-baby {
-  width: 30vw;
 }
 
 .nav-container {
-  width: 30vw;
   padding: 3vh 0vh 3vh 0vh;
   background-color: #87edfa;
   /* color: rgb(32, 158, 158); */
