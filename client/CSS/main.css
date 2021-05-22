@@ -18,10 +18,10 @@ body {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 a {
@@ -46,7 +46,7 @@ p {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .emoji {
@@ -55,15 +55,19 @@ p {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
 .emoji_child {
   font-size: 3em;
   /* background-color: yellow; */
+}
+
+.emoji_child:hover {
+  font-size: 4em;
 }
 
 textarea {
@@ -100,10 +104,10 @@ textarea::placeholder {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   padding-bottom: 6vh;
 }
 
@@ -111,5 +115,28 @@ textarea::placeholder {
   padding: 1.5vh;
   border-radius: 10px;
   border-color: blueviolet;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto auto auto auto auto;
+      grid-template-columns: auto auto auto auto auto auto auto;
+  background-color: #bddffc;
+  margin: 35px;
+  border-radius: 25px;
+  padding: 25px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.grid-item a:hover {
+  background-color: rgba(30, 132, 139, 0.8);
 }
 /*# sourceMappingURL=main.css.map */

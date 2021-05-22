@@ -45,11 +45,17 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  // cursor: pointer;
 }
 
 .emoji_child {
   font-size: 3em;
   /* background-color: yellow; */
+}
+
+.emoji_child:hover{
+  font-size: 4em;
+  
 }
 
 textarea {
@@ -77,3 +83,29 @@ textarea::placeholder {
   border-radius: 10px;
   border-color: blueviolet;
 }
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  background-color: #bddffc;
+  margin: 35px;
+  border-radius: 25px;
+  padding: 25px;
+}
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 8px;
+  font-size: 15px;
+  text-align: center;
+}
+
+
+
+  .grid-item{
+    a:hover{
+      background-color: rgba(30, 132, 139, 0.8);
+    }
+  }
+  
