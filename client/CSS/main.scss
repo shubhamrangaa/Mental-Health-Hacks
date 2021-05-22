@@ -3,10 +3,35 @@
   padding: 0px;
 }
 
+html,
+body {
+  min-height: 400px;
+  min-width: 400px;
+}
 body {
   background-color: beige;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   width: 600px;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  font-size: 1rem;
 }
 .box-baby {
   // width: 30vw;
@@ -103,5 +128,22 @@ textarea::placeholder {
 .grid-item {
   a:hover {
     background-color: rgba(30, 132, 139, 0.8);
+  }
+}
+
+#logContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  text-align: left;
+
+  h3 {
+    margin: 0 auto;
+  }
+
+  p {
+    padding: 0.25rem;
+    justify-content: left;
+    text-align: left;
   }
 }
