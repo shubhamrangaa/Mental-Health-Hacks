@@ -134,6 +134,7 @@ textarea::placeholder {
   padding: 8px;
   font-size: 15px;
   text-align: center;
+  cursor: pointer;
 }
 
 .grid-item a:hover {

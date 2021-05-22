@@ -7,7 +7,8 @@ window.onload = function () {
 
   chrome.storage.sync.get(["emotion"], function (result) {
     if (result.emotion) {
-      emoArray.push(result.emotion);
+      emoArray = result.emotion;
+      console.log(emoArray);
     }
   });
 

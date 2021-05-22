@@ -53,9 +53,8 @@ p {
   /* background-color: yellow; */
 }
 
-.emoji_child:hover{
+.emoji_child:hover {
   font-size: 4em;
-  
 }
 
 textarea {
@@ -84,7 +83,6 @@ textarea::placeholder {
   border-color: blueviolet;
 }
 
-
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
@@ -99,13 +97,11 @@ textarea::placeholder {
   padding: 8px;
   font-size: 15px;
   text-align: center;
+  cursor: pointer;
 }
 
-
-
-  .grid-item{
-    a:hover{
-      background-color: rgba(30, 132, 139, 0.8);
-    }
+.grid-item {
+  a:hover {
+    background-color: rgba(30, 132, 139, 0.8);
   }
-  
+}
