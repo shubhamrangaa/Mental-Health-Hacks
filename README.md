@@ -1,4 +1,4 @@
-# Inspiration
+# 💡Inspiration
 
 Mental health is often an overlooked and stigmatized issue in many developing countries, in spite of its prevalence. According to a World Health Organisation (WHO) Report, major or minor mental illnesses requiring expert intervention is 7.5 per cent of India’s population. Also, estimates show that of roughly 60 million people with mental illnesses, about 90 per cent are currently not receiving treatment in India. The Covid-19 pandemic has highlighted the urgent need for reinvestment in mental health, as altered daily routines, financial pressures, extensive social isolation and information overload continues to take its toll on mental health.
 
@@ -12,7 +12,7 @@ Studies do show, however, that the population has begun to take mental health se
 
 We witnessed a huge gap with the needs and the existing solutions hence, created **How You Doin'?**
 
-# What it does
+# 💻 What it does
 
 After downloading the extension (for right now, downloading the repository from Github and uploading it to Developer Mode in Extensions), users pin Serotonin, which has the icon of a smiley face. When clicked on, the responsive navigation bar with "Calendar," "Data," "Notes," and "Profile" appears along with six animated emojis that represent moods - happy, confused, alright, sad, mad, and explosive.
 
@@ -28,13 +28,13 @@ Profile: A textbox where users write their phone-number, and the Twilio messagin
 
 Everything is saved with local storage, even when the extension is paused or removed.
 
-# How we built it
+# 🔨 How we built it
 To-Do
 
-# Challenges we ran into
+# 🧠 Challenges we ran into
 To-Do
 
-# Accomplishments that we're proud of
+# 🏅 Accomplishments that we're proud of
 To-Do
 
 # 📖 What we learned
