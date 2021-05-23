@@ -42,15 +42,15 @@ The extension deployed on:-
 
 # 🧠 Challenges we ran into
 • Time constraints, figuring out how to successfully incorporate all the features we wanted. 
-• 
+• We were using Chrome Storage API for the first time and had a hard time figuring out it's functionalities
 
 # 🏅 Accomplishments that we're proud of
-To-Do
+We are proud that we are able to create a solution which can help our generation and anybody who are facing any problem with their mental health.
 
 # 📖 What we learned
 To-Do
 
-# 🚀 What's next for Trackify
+# 🚀 What's next for *How You Doin'?*
 To-Do
 
 # TRACKIFY
