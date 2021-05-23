@@ -37,7 +37,7 @@ The frontend is built on:-
 • JavaScript
 The database is built on:-
 • Chrome Local Storage API
-The extension deployed on:-
+The extension is deployed on:-
 • Chrome Web Store 
 
 # 🧠 Challenges we ran into
