@@ -29,10 +29,20 @@ Profile: A textbox where users write their phone-number, and the Twilio messagin
 Everything is saved with local storage, even when the extension is paused or removed.
 
 # 🔨 How we built it
-To-Do
+We built the UI using:-
+• Figma
+The frontend is built on:-
+• HTML
+• SCSS
+• JavaScript
+The database is built on:-
+• Chrome Local Storage API
+The extension deployed on:-
+• Chrome Web Store 
 
 # 🧠 Challenges we ran into
-To-Do
+• Time constraints, figuring out how to successfully incorporate all the features we wanted. 
+• 
 
 # 🏅 Accomplishments that we're proud of
 To-Do
