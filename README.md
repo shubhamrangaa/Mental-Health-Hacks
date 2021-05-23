@@ -18,14 +18,6 @@ After downloading the extension (for right now, downloading the repository from 
 
 View Video for a More Accurate View
 
-Calendar: Originally, the calendar is blank. When the user first clicks on an emoji, the day on the calendar changes color, correlating to the emoji. For example, the user clicks "Happy Emoji," the calendar day turns yellow, and the "Sad Emoji" causes the calendar day to turn blue. The calendar is fully functional with "Next," "Previous," and "Jump To [month and year]."
-
-Data: An animated pie chart for the current month is shown with updated percentages when hovered upon. If the user chooses multiple moods throughout the day, the pie chat automatically updates.
-
-Notes: A responsive, movable textbox where users write anything - notes, rants, feelings. Notes are saved with local storage, and users have the ability to choose the mood they feel when they write. The notes under "Show Notes" are color-coded with the mood.
-
-Profile: A textbox where users write their phone-number, and the Twilio messaging API sends a text message to the user's phone number with the following message and user's data: "Hello! Welcome to Serotonin. Your monthly mood is [moods], weekly mood is [mood], and current mood is [mood]."
-
 Everything is saved with local storage, even when the extension is paused or removed.
 
 # 🔨 How we built it
