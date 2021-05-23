@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -6,13 +7,12 @@
 html,
 body {
   min-height: 400px;
-  min-width: 400px;
+  min-width: 500px;
 }
 
 body {
-  background-color: beige;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 600px;
+  font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 500px;
 }
 
 h1 {
@@ -36,9 +36,8 @@ p {
 }
 
 .nav-container {
-  padding: 3vh 0vh 3vh 0vh;
-  background-color: #87edfa;
-  /* color: rgb(32, 158, 158); */
+  padding: 0rem 0.5rem;
+  background-color: #85b6ff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,26 +45,34 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 0 0 1rem 1rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
-a {
-  padding: 1vh 1vw;
-  border-radius: 20px;
+.nav-container a {
+  font-family: Inter;
+  font-weight: 500;
+  font-size: 1rem;
+  color: white;
+  padding: 1.5rem 1.5rem;
+  background-color: #85b6ff;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   text-decoration: none;
-  color: black;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
 }
 
-a:hover {
-  background-color: #00adad;
-  color: aqua;
+.nav-container a:hover {
+  background-color: #71a9fd;
 }
 
-/* 
-form{
-
-} */
 p {
   padding-top: 5vh;
   display: -webkit-box;
@@ -148,23 +155,27 @@ textarea::placeholder {
   display: grid;
   -ms-grid-columns: auto auto auto auto auto auto auto;
       grid-template-columns: auto auto auto auto auto auto auto;
-  background-color: #bddffc;
-  margin: 35px;
-  border-radius: 25px;
-  padding: 25px;
+  margin: 1rem auto;
+  border-radius: 0.25rem;
+  padding: 1rem;
 }
 
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 0.25px solid rgba(230, 230, 230, 0.8);
   padding: 8px;
-  font-size: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #070410;
   text-align: center;
   cursor: pointer;
+  -webkit-transition: ease-in 0.15s;
+  transition: ease-in 0.15s;
 }
 
-.grid-item a:hover {
-  background-color: rgba(30, 132, 139, 0.8);
+.grid-item:hover {
+  background-color: #85b6ff;
+  color: white;
 }
 
 #logContainer {
@@ -189,5 +200,21 @@ textarea::placeholder {
       -ms-flex-pack: left;
           justify-content: left;
   text-align: left;
+}
+
+.calendarHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#calendarHeading {
+  font-family: Inter;
+  color: #ffadad;
+  font-weight: 800;
+  margin-top: 1rem;
 }
 /*# sourceMappingURL=main.css.map */

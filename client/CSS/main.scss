@@ -1,17 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0px;
   padding: 0px;
 }
 
+// COLOR PALLETE
+$navBlue: #85b6ff;
+$navBlueHover: #71a9fd;
+$darkestBlue: #070410;
+$lightPink: #ffadad;
 html,
 body {
   min-height: 400px;
-  min-width: 400px;
+  min-width: 500px;
 }
 body {
-  background-color: beige;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  width: 600px;
+  font-family: Inter, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 500px;
 }
 
 h1 {
@@ -33,33 +39,34 @@ h4 {
 p {
   font-size: 1rem;
 }
-.box-baby {
-  // width: 30vw;
-}
+// NAVBAR
 .nav-container {
   // width: 30vw;
-  padding: 3vh 0vh 3vh 0vh;
-  background-color: rgb(135, 237, 250);
-  /* color: rgb(32, 158, 158); */
+  padding: 0rem 0.5rem;
+  background-color: $navBlue;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-a {
-  padding: 1vh 1vw;
-  border-radius: 20px;
-  text-decoration: none;
-  color: black;
+  justify-content: center;
+  border-radius: 0 0 1rem 1rem;
+  height: fit-content;
+
+  a {
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    padding: 1.5rem 1.5rem;
+    background-color: $navBlue;
+    height: max-content;
+    text-decoration: none;
+    transition: 0.15s ease-in;
+  }
+
+  a:hover {
+    background-color: $navBlueHover;
+  }
 }
 
-a:hover {
-  background-color: rgb(0, 173, 173);
-  color: aqua;
-}
-/* 
-form{
-
-} */
 p {
   padding-top: 5vh;
   display: flex;
@@ -111,24 +118,25 @@ textarea::placeholder {
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
-  background-color: #bddffc;
-  margin: 35px;
-  border-radius: 25px;
-  padding: 25px;
+  margin: 1rem auto;
+  border-radius: 0.25rem;
+  padding: 1rem;
 }
 .grid-item {
   background-color: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 0.25px solid rgba(230, 230, 230, 0.8);
   padding: 8px;
-  font-size: 15px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: $darkestBlue;
   text-align: center;
   cursor: pointer;
+  transition: ease-in 0.15s;
 }
 
-.grid-item {
-  a:hover {
-    background-color: rgba(30, 132, 139, 0.8);
-  }
+.grid-item:hover {
+  background-color: $navBlue;
+  color: white;
 }
 
 #logContainer {
@@ -146,4 +154,15 @@ textarea::placeholder {
     justify-content: left;
     text-align: left;
   }
+}
+
+.calendarHeader {
+  display: flex;
+  justify-content: center;
+}
+#calendarHeading {
+  font-family: Inter;
+  color: $lightPink;
+  font-weight: 800;
+  margin-top: 1rem;
 }
