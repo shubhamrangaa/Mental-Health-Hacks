@@ -48,7 +48,6 @@ The extension is deployed on:-
 We are proud that we are able to create a solution which can help our generation and anybody who are facing any problem with their mental health.
 
 # 📖 What we learned
-To-Do
+We being a team of inexperienced developers got to learn a lot about the nuances of JavaScript, Chrome Local Storage API and we also used SCSS for the first time in this project. This hackathon has given us a lot of exposure to the world of Web Development and creating practical solutions. 
 
 # 🚀 What's next for *How You Doin'?*
-To-Do
