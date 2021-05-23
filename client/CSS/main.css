@@ -24,7 +24,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: #ffadad;
+  font-weight: 800;
+  padding-top: 0.25rem;
 }
 
 h4 {
@@ -73,16 +76,21 @@ p {
   background-color: #71a9fd;
 }
 
-p {
-  padding-top: 5vh;
+#moodForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1rem;
 }
 
-.emoji {
+#moodForm .emojiContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -92,62 +100,68 @@ p {
           flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  cursor: pointer;
+  padding: 1rem;
 }
 
-.emoji_child {
+#moodForm .emojiContainer .emoji_child {
   font-size: 3em;
-  /* background-color: yellow; */
+  position: relative;
+  padding: 0.5rem;
+  -webkit-transition: 0.15s ease-in;
+  transition: 0.15s ease-in;
 }
 
-.emoji_child:hover {
-  font-size: 4em;
+#moodForm .emojiContainer .emojiRadio {
+  position: absolute;
+  top: -50px;
+  left: 50px;
 }
 
-textarea {
-  padding: 2em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5vh;
-  width: 70%;
-  height: 5vw;
-  border-radius: 20px;
+#moodForm .emojiContainer .emoji_child:hover {
+  background-color: #ffadad;
+}
+
+#emotionNote {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-width: 400px;
+  min-height: 50px;
+  border-radius: 0.25rem;
+  border: 0.15px solid #dddddd;
 }
 
 textarea::-webkit-input-placeholder {
-  font-size: x-large;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 textarea:-ms-input-placeholder {
-  font-size: x-large;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 textarea::-ms-input-placeholder {
-  font-size: x-large;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 textarea::placeholder {
-  font-size: x-large;
+  font-size: 0.9rem;
+  text-align: center;
 }
 
-.submit-container {
-  padding-top: 5vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  padding-bottom: 6vh;
-}
-
-.submit_button {
-  padding: 1.5vh;
-  border-radius: 10px;
-  border-color: blueviolet;
+.submitButton {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: #85b6ff;
+  color: white;
+  outline: none;
+  border: none;
 }
 
 .grid-container {

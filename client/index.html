@@ -17,39 +17,61 @@
 
         <a href="./History.html" rel="noopener noreferrer">History</a>
 
-        <a href="./Profile.html" rel="noopener noreferrer">Profile</a>
+        <a href="./index.html" rel="noopener noreferrer">Home</a>
       </nav>
       <!-- Getting some form action here  -->
       <form id="moodForm" name="moodForm">
-        <p class="ques">How do you feel today?</p>
-        <div class="emoji">
+        <h3 class="ques">How do you feel today?</h3>
+        <div class="emojiContainer">
           <!-- Idhar maine gadar bakchodi machai hai isko badalna hoga, mainly input kya rakhna hoga pehele maine hidden rakkha tha (Dikhne me best wohi hai) -->
 
-          <label for="happy"><p class="emoji_child">😃</p></label>
-          <input type="radio" name="moodEmoji" id="happy" />
+          <label for="happy"
+            ><p class="emoji_child">😃</p>
+            <input
+              type="radio"
+              name="moodEmoji"
+              id="happy"
+              class="emojiRadio"
+            />
+          </label>
 
-          <label for="sad"><p class="emoji_child">😭</p></label>
-          <input type="radio" name="moodEmoji" id="sad" />
+          <label for="sad">
+            <p class="emoji_child">😭</p>
 
-          <label for="angry"><p class="emoji_child">😡</p></label>
-          <input type="radio" name="moodEmoji" id="angry" />
+            <input type="radio" name="moodEmoji" id="sad" class="emojiRadio" />
+          </label>
 
-          <label for="neutral"><p class="emoji_child">😐</p></label>
-          <input type="radio" name="moodEmoji" id="neutral" />
+          <label for="angry">
+            <p class="emoji_child">😡</p>
+
+            <input
+              type="radio"
+              name="moodEmoji"
+              id="angry"
+              class="emojiRadio"
+            />
+          </label>
+
+          <label for="neutral">
+            <p class="emoji_child">😐</p>
+
+            <input
+              type="radio"
+              name="moodEmoji"
+              id="neutral"
+              class="emojiRadio"
+            />
+          </label>
         </div>
-        <p>What made you feel this way?</p>
         <textarea
           name="emotionNote"
           id="emotionNote"
           class="emo-note"
-          placeholder="Describe your emotion"
+          placeholder="What made you feel this way?"
         ></textarea>
-        <div class="submit-container">
-          <!-- <button type="submit" class="submit_button">Skip & Submit</button> -->
-          <button type="submit" class="submit_button" id="formSubmit">
-            Submit
-          </button>
-        </div>
+        <button type="submit" class="submitButton" id="formSubmit">
+          Submit
+        </button>
       </form>
     </div>
 

@@ -29,7 +29,10 @@ h2 {
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
+  color: $lightPink;
+  font-weight: 800;
+  padding-top: 0.25rem;
 }
 
 h4 {
@@ -67,52 +70,59 @@ p {
   }
 }
 
-p {
-  padding-top: 5vh;
+#moodForm {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 1rem;
+
+  .emojiContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    cursor: pointer;
+    padding: 1rem;
+
+    .emoji_child {
+      font-size: 3em;
+      position: relative;
+      padding: 0.5rem;
+      transition: 0.15s ease-in;
+    }
+    .emojiRadio {
+      position: absolute;
+      top: -50px;
+      left: 50px;
+    }
+
+    .emoji_child:hover {
+      background-color: $lightPink;
+    }
+  }
 }
 
-.emoji {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  // cursor: pointer;
-}
-
-.emoji_child {
-  font-size: 3em;
-  /* background-color: yellow; */
-}
-
-.emoji_child:hover {
-  font-size: 4em;
-}
-
-textarea {
-  padding: 2em;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 5vh;
-  width: 70%;
-  height: 5vw;
-  border-radius: 20px;
+#emotionNote {
+  padding: 0.5rem;
+  margin: 1rem auto;
+  height: fit-content;
+  min-width: 400px;
+  min-height: 50px;
+  border-radius: 0.25rem;
+  border: 0.15px solid rgb(221, 221, 221);
 }
 textarea::placeholder {
-  font-size: x-large;
+  font-size: 0.9rem;
+  text-align: center;
 }
-.submit-container {
-  padding-top: 5vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  padding-bottom: 6vh;
-}
-.submit_button {
-  padding: 1.5vh;
-  border-radius: 10px;
-  border-color: blueviolet;
+
+.submitButton {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  background-color: $navBlue;
+  color: white;
+  outline: none;
+  border: none;
 }
 
 .grid-container {
