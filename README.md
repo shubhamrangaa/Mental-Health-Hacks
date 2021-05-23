@@ -10,22 +10,24 @@ Studies do show, however, that the population has begun to take mental health se
 
 3) Patients who do end up seeking professional help end up with extremely infrequent appointments, due to India’s severe shortage of licensed psychiatrists (1 per 334,000 people). This leads to patients having difficulty recounting what has happened since their last appointments, and overworked providers who may have difficulty keeping track of patient records.
 
-##What it does
+We witnessed a huge gap with the needs and the existing solutions hence we created **How You Doin'?**
+
+# What it does
 To-Do
 
-##How we built it
+# How we built it
 To-Do
 
-##Challenges we ran into
+# Challenges we ran into
 To-Do
 
-##Accomplishments that we're proud of
+# Accomplishments that we're proud of
 To-Do
 
-##What we learned
+# What we learned
 To-Do
 
-##What's next for Trackify
+# What's next for Trackify
 To-Do
 
 # TRACKIFY
